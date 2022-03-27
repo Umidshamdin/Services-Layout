@@ -1,0 +1,455 @@
+﻿@model Dictionary<string,string>
+
+
+<header>
+    <section id="header">
+        <div class="background-header">
+            <p>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay </p>
+        </div>
+        <div class="container">
+            <div class="row d-flex">
+
+                <div class="pages-enter">
+                    <ul>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./login.html">My account</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Order Tracking</a></li>
+                    </ul>
+                </div>
+
+                <div class="secury-information">
+                    <i class="far fa-hand-paper"></i><span>
+                        100% Secure delivery without contacting the
+                        courier
+                    </span>
+                    <span>Need help? Call Us:</span><a href=""> +0020 500</a>
+                </div>
+
+                <div class="select d-flex">
+                    <div class="dropdown">
+                        <p>English</p>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    <a href="#">English</a>
+                                </li>
+                                <li>
+                                    <a href="#">Spanish</a>
+                                </li>
+                                <li>
+                                    <a href="#">German</a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <p>USD</p>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    <a href="#">USD</a>
+                                </li>
+                                <li>
+                                    <a href="#">IRN</a>
+                                </li>
+                                <li>
+                                    <a href="#">GBP</a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo">
+                    <img src="~/assets/img/@Model["HeaderLogo"]" alt="">
+                    <p>Online Grocery Shopping Center</p>
+                    <span style="color:red">@Model["Phone"]</span>
+                </div>
+
+                <div class="location">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                        <p>Your Location</p>
+                        <b>Select a location</b>
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        <p> Choose your Delivery Location</p>
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    Enter your address and we will specify the offer for your area
+
+                                    <i class="fas fa-search"></i><input class="form-control" type="text"
+                                                                        placeholder="Search your area">
+
+
+                                    <div class="ull d-flex">
+                                        <ul>
+                                            <li>
+                                                <a href="">Select a Location</a>
+
+
+                                            </li>
+                                            <li>
+                                                <a href="">Alabama</a>
+
+
+                                            </li>
+                                            <li>
+                                                <a href="">Alaska</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="">Arizona</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="">California</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Colorado</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Florida</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Georgia</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Kansas</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Minnesota</a>
+                                            </li>
+                                            <li>
+                                                <a href="">New York</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Washington</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+
+                                                <a class="upp" href="">Clear All</a>
+
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$130</span>
+
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$120</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$150</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$110</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$140</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$160</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$120</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$170</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$120</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$110</span>
+                                            </li>
+                                            <li>
+
+                                                <span>Min:$130</span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inputs d-flex">
+                    <input class="form-control" type="text" placeholder="Search for products..."> <i class="fas fa-search"></i>
+                </div>
+
+                <div class="login-basket d-flex">
+                    <div class="login-enter">
+                        <a href="./login.html"><i class="far fa-user"></i></a>
+                    </div>
+                    <div class="basket">
+                        <a asp-controller="Card" asp-action="Index"><i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="home-list d-flex">
+
+                    <div class="dropdown">
+                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+
+                            ALL Categories
+                            <i class="fas fa-angle-down"></i>
+                            <ul>
+                                <li>
+                                    TOTAL 63 PRODUTCS
+                                </li>
+                            </ul>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+
+                            <ul>
+                                <li>
+                                    <div class="dropdown">
+                                        <i class="fas fa-apple-alt"></i> <span>Fruits & Vegetables</span> <i class="fas fa-chevron-right"></i>
+                                        <div class="dropdown-content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Cuts & Sprouts</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Exotic Fruits & Veggies</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Fresh Fruits</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Fresh Vegetables</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Herbs & Seosoning</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Packaged Product</a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">Party Trays</a>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-fish"></i> <a href="">Meats & Seefood</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-egg"></i> <a href="">Breakfast & Dairy</a>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <i class="fas fa-fish"></i> <span>Beverages</span> <i class="fas fa-chevron-right"></i>
+                                        <div class="dropdown-content">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Coffee</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Craft Beer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Drink Boxes & Pouches</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Milk & Plank-Based Milk </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Soda & Pop</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pranklink Water</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tea & Kombucha </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Water</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <i class="fas fa-apple-alt"></i> <a href="">Breads & Bakery</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-snowflake"></i> <a href="">Frozen Foods</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-cookie"></i> <a href="">Biscuits & Snacks</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-menorah"></i> <a href="">Grocery & Staples</a>
+                                </li>
+
+                                <li>
+                                    <a href="">Value of the Day</a>
+                                </li>
+                                <li>
+                                    <a href="">Top 100 Offers</a>
+                                </li>
+                                <li>
+                                    <a href="">New Arrivals</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="home d-flex">
+                        <div class="drop1">
+                            <div class="dropdown">
+                                <span>Home</span><span><i class="fas fa-angle-down"></i></span>
+                                <div class="dropdown-content">
+
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home 1</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 2</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 3</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 4</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 5</a>
+
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drop2">
+                            <div class="dropdown">
+                                <a style="color: black; text-decoration: none;" href="./shop.html">Shop</a><i class="fas fa-angle-down"></i>
+                                <div class="dropdown-content">
+
+                                    <ul>
+                                        <li>
+                                            <b>Shop Lists</b>
+                                        </li>
+                                        <li><a href="">Shop Default</a></li>
+                                        <li><a href="">Shop right Sidebar</a></li>
+                                        <li><a href="">Shop Wide</a></li>
+                                        <li><a href="">List Left Sidebar</a></li>
+                                        <li><a href="">Load More Button </a></li>
+                                        <li><a href="">Infinite Scrolling</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>
+                                            <b>Product Detail</b>
+                                        </li>
+                                        <li><a href="">Product Default</a></li>
+                                        <li><a href="">Product Variable</a></li>
+                                        <li><a href="">Product Grouped</a></li>
+                                        <li><a href="">Product External</a></li>
+                                        <li><a href="">Product Downloadable</a></li>
+                                        <li><a href="">Product With Video</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>
+                                            <b>Product Types</b>
+                                        </li>
+                                        <li><a href="">Single Type 1</a></li>
+                                        <li><a href="">Single Type 2</a></li>
+                                        <li><a href="">Single Type 3</a></li>
+                                        <li><a href="">Single Type 4</a></li>
+                                        <li><a href="">Thumbnails Left </a></li>
+                                        <li><a href="">Zoom Image</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>
+                                            <b>Shop Pages</b>
+                                        </li>
+                                        <li><a href="">Cart</a></li>
+                                        <li><a href="">Chechout</a></li>
+                                        <li><a href="">My account</a></li>
+                                        <li><a href="">Wishlist</a></li>
+                                        <li><a href="">Order Tracking </a></li>
+                                        <li><a href="">Order on WhatsApp </a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>
+                                            <b>Shop Layouts</b>
+                                        </li>
+                                        <li><a href="">Two Columns</a></li>
+                                        <li><a href="">Three Columns</a></li>
+                                        <li><a href="">Three Columns Wide</a></li>
+                                        <li><a href="">Four Columns</a></li>
+                                        <li><a href="">Four Colums Wide </a></li>
+                                        <li><a href="">Four Colums wide</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <i class="fas fa-drumstick-bite"></i><a href="./product-detail.html">MEATS & SEAFOOD</a>
+                        <i class="fas fa-bread-slice"></i><a href="">BAKERY</a>
+                        <i class="fas fa-mug-hot"></i><a href="">BEVERAGES</a>
+                        <a href="./blog.html">BLOG</a>
+                        <a href="./contact.html">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+</header>

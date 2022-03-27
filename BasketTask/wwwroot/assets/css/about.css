@@ -1,0 +1,659 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header .row {
+  width: 100%;
+}
+
+#header .background-header {
+  background-color: darkblue;
+  height: 42px;
+}
+
+#header .background-header p {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+#header .pages-enter {
+  padding: 10px;
+}
+
+#header .pages-enter ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .pages-enter ul li {
+  margin-left: 10px;
+}
+
+#header .pages-enter ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
+}
+
+#header .pages-enter ul li:hover a {
+  display: block;
+  color: blue;
+}
+
+#header .secury-information {
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#header .secury-information span {
+  margin-left: 10px;
+}
+
+#header .secury-information i {
+  font-size: 18px;
+}
+
+#header .select {
+  margin-top: 10px;
+}
+
+#header .select .dropdown {
+  margin-left: 20px;
+}
+
+#header .select .dropdown .dropdown-content {
+  border: 1px solid white;
+  text-align: center;
+  height: 140px;
+  width: 100px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+
+#header .select .dropdown .dropdown-content ul {
+  list-style: none;
+}
+
+#header .select .dropdown .dropdown-content ul li:hover a {
+  color: #2bbef9;
+}
+
+#header .select .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#header .select .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#header .logo img {
+  width: 170px;
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+#header .logo p {
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 2px;
+  color: gray;
+}
+
+#header .location {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#header .location .btn {
+  width: 220px;
+  height: 70px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#header .location .modal-dialog {
+  margin-top: 200px;
+}
+
+#header .location .modal-body .form-control {
+  width: 100%;
+  font-size: 15px;
+  padding: 30px;
+}
+
+#header .location .modal-body i {
+  font-size: 20px;
+}
+
+#header .location .modal-body .fa-search {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  cursor: pointer;
+}
+
+#header .location .modal-body .ull {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#header .location .modal-body ul {
+  width: 100%;
+  height: 200px;
+  list-style: none;
+}
+
+#header .location .modal-body ul li {
+  width: 299px;
+}
+
+#header .location .modal-body ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+#header .location .modal-body ul li .upp {
+  margin-left: 70px;
+}
+
+#header .location .modal-body ul li:hover a {
+  color: #2bbef9;
+}
+
+#header .location .modal-body ul span {
+  margin-left: 70px;
+}
+
+#header .form-inputs {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+#header .form-inputs .form-control {
+  height: 55px;
+  width: 550px;
+  border-radius: 10px;
+}
+
+#header .form-inputs i {
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#header .login-basket {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#header .login-basket i {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#header .login-basket a {
+  color: black;
+}
+
+.home-list .btn-primary {
+  background-color: #2bbef9;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #2bbef9;
+  border-radius: 20px;
+}
+
+.home-list .btn-primary i {
+  margin-left: 10px;
+}
+
+.home-list .btn-primary ul {
+  list-style: none;
+}
+
+.home-list .btn-primary li {
+  font-size: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  color: black;
+  margin-top: 10px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+.home-list .dropdown-menu {
+  height: 330px;
+  width: 300px;
+  text-align: center;
+}
+
+.home-list .dropdown-menu ul {
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.home-list .dropdown-menu ul a {
+  color: black;
+  text-decoration: none;
+}
+
+.home-list .dropdown-menu ul li:hover a {
+  color: #2bbef9;
+}
+
+.home-list .dropdown-menu ul li i {
+  color: gray;
+}
+
+.home-list .dropdown-menu ul li:hover i {
+  color: #2bbef9;
+}
+
+.home-list .dropdown-menu ul li .dropdown {
+  margin-left: 15px;
+  width: 250px;
+}
+
+.home-list .dropdown-menu ul li .dropdown .dropdown-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  text-align: center;
+  height: 400px;
+  width: 250px;
+  margin-left: 106px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 165px;
+  background-color: #f1f1f1;
+  z-index: 10;
+}
+
+.home-list .dropdown-menu ul li .dropdown .dropdown-content ul {
+  list-style: none;
+}
+
+.home-list .dropdown-menu ul li .dropdown .dropdown-content ul li:hover a {
+  color: #2bbef9;
+}
+
+.home-list .dropdown-menu ul li .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.home-list .dropdown-menu ul li .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.home-list .dropdown-menu .down {
+  border-top: 1px solid black;
+  width: 100%;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.home {
+  margin-left: 150px;
+}
+
+.home .drop1 .dropdown {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.home .drop1 .dropdown .dropdown-content {
+  border: 1px solid white;
+  height: 250px;
+  width: 170px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 10;
+}
+
+.home .drop1 .dropdown .dropdown-content ul {
+  list-style: none;
+}
+
+.home .drop1 .dropdown .dropdown-content ul a {
+  text-align: center;
+}
+
+.home .drop1 .dropdown .dropdown-content ul li:hover a {
+  color: #2bbef9;
+}
+
+.home .drop1 .dropdown i {
+  position: absolute;
+  top: 4px;
+  left: 45px;
+}
+
+.home .drop1 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.home .drop1 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.home .drop2 {
+  margin-top: 15px;
+}
+
+.home .drop2 .dropdown {
+  margin-left: 50px;
+}
+
+.home .drop2 .dropdown i {
+  position: absolute;
+  top: 4px;
+  left: 40px;
+}
+
+.home .drop2 .dropdown .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid white;
+  height: 400px;
+  width: 900px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 10;
+  -webkit-box-shadow: 100px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 100px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home .drop2 .dropdown .dropdown-content ul {
+  list-style: none;
+}
+
+.home .drop2 .dropdown .dropdown-content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 175px;
+  text-align: center;
+}
+
+.home .drop2 .dropdown .dropdown-content ul li a {
+  margin-left: 10px;
+  width: 220px;
+}
+
+.home .drop2 .dropdown .dropdown-content ul li:hover a {
+  color: #2bbef9;
+}
+
+.home .drop2 .dropdown .dropdown-content ul li b {
+  margin-left: 50px;
+}
+
+.home .drop2 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.home .drop2 .dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list {
+  margin-top: 15px;
+  margin-left: 65px;
+}
+
+.list a {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.list:hover a {
+  color: #2bbef9;
+  border: 1px solid #2bbef9;
+  border-radius: 20px;
+}
+
+.list:hover i {
+  color: #2bbef9;
+}
+
+.list i {
+  color: gray;
+}
+
+#image {
+  position: relative;
+}
+
+#image img {
+  margin-top: 15px;
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+#image .center {
+  position: absolute;
+  top: 300px;
+  left: 500px;
+}
+
+#image .row {
+  position: relative;
+}
+
+#image .row p {
+  margin-top: 70px;
+}
+
+#image .row h1 {
+  width: 800px;
+  margin-left: 100px;
+}
+
+#image .row .between {
+  margin-left: 100px;
+}
+
+#image .row img {
+  width: 580px;
+  height: 800px;
+}
+
+#image .row .image-write {
+  position: relative;
+}
+
+#image .row .image-write .ceos {
+  margin-top: 100px;
+}
+
+#image .row .image-write .ceos h1 {
+  font-size: 30px;
+  width: 400px;
+  margin-left: 50px;
+}
+
+#image .row .image-write .ceos .down {
+  margin-top: 150px;
+  margin-left: 50px;
+  width: 500px;
+  height: 10px;
+}
+
+#image .row .image-write .ceos .up {
+  margin-left: 50px;
+}
+
+#finish .row {
+  background-color: white;
+  position: absolute;
+  background-color: white;
+  margin-top: -120px;
+  margin-left: 80px;
+  width: 75%;
+  height: 110px;
+  padding: 70px;
+}
+
+#finish .row p {
+  margin-top: 100px;
+}
+
+#fin {
+  margin-top: 330px;
+}
+
+#fin .finish {
+  position: relative;
+  background-color: #233a95;
+  width: 100%;
+  height: 150px;
+  padding: 200px;
+}
+
+#fin .finish h3 {
+  color: white;
+}
+
+#fin .finish p {
+  color: gray;
+}
+
+#fin .finish h5 {
+  color: white;
+}
+
+#fin .finish .input .one {
+  width: 500px;
+  height: 60px;
+  position: relative;
+}
+
+#fin .finish .input .two {
+  width: 120px;
+  margin-left: 20px;
+  background-color: #233a95;
+  color: white;
+  position: absolute;
+  left: 550px;
+  top: 330px;
+}
+
+#fin .finish .image img {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  right: 200px;
+  top: 200px;
+}
+
+#fiss .row {
+  margin-top: 200px;
+}
+
+#fiss .row .uls {
+  margin-left: 20px;
+  list-style: none;
+}
+
+#fiss .row .uls a {
+  color: black;
+  text-decoration: none;
+}
+
+#fiss .row .uls ul {
+  list-style: none;
+  padding: 20px;
+}
+
+#tele .row {
+  margin-top: 100px;
+  position: relative;
+}
+
+#tele .row p {
+  font-size: 10px;
+}
+
+#tele .row .ivonss {
+  position: absolute;
+}
+
+#tele .row .down {
+  margin-left: 470px;
+}
+
+#tele .row .down h5 {
+  font-size: 16px;
+}
+
+#tele .row .down p {
+  font-size: 15px;
+}
+
+#tele .row .icon {
+  margin-left: 100px;
+}
+
+#tele .row .copy p {
+  font-size: 12px;
+  margin-left: -100px;
+}
+
+#tele .row .polisy {
+  margin-left: 20px;
+}
+
+#tele .row .polisy a {
+  padding: 4px;
+  margin-left: 8px;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+#tele .row .payment {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=about.css.map */
